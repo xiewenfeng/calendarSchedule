@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_3dp"
+    android:layout_marginLeft="@dimen/space_3dp"
+    android:layout_marginRight="@dimen/space_3dp"
+    android:background="@drawable/bg_item_schedule"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/vScheduleHintBlock"
+        android:layout_width="10dp"
+        android:layout_height="@dimen/schedule_item_size"
+        android:background="@drawable/purple_schedule_left_block"/>
+
+    <TextView
+        android:id="@+id/tvScheduleState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10dp"
+        android:background="@drawable/finish_schedule_hint"
+        android:gravity="center"
+        android:minWidth="50dp"
+        android:padding="3dp"
+        android:text="Finish"
+        android:textColor="@color/color_schedule_finish"/>
+
+    <TextView
+        android:id="@+id/tvScheduleTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10dp"
+        android:layout_marginRight="@dimen/space_10dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="和老板吃饭"
+        android:textColor="@color/color_schedule_title_text"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvScheduleTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/space_12dp"
+        android:ellipsize="end"
+        android:textColor="@color/color_schedule_title_text"
+        android:textSize="16sp"/>
+
+</LinearLayout>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="text">#333333</color>
+    <color name="blue_dark">#88abda</color>
+    <color name="blue_light">#e3f6fa</color>
+    <color name="blue_color">#3fbbcb</color>
+    <color name="text_grey">#dcdcdc</color>
+    <color name="text_normal">#626262</color>
+    <color name="activity_bg_color">#eeeeee</color>         <!--各页面背景颜色-->
+
+    <!-- calendar color -->
+    <color name="cal_text_normal">#4A4A4A</color>
+    <color name="cal_text_light">#ababab</color>
+    <color name="trans_cal_text_light">#66ababab</color>
+    <color name="cal_text_super_light">#c0c0c0</color>
+    <color name="cal_blue_light">#8EC5EE</color>
+    <color name="cal_blue_dark">#4A4A4A</color>
+    <color name="cal_stroke">#02A8F3</color>
+    <color name="cal_days_title">#F5F5F5</color>
+    <color name="cal_vertical_line">#E9F6FF</color>
+    <color name="cal_line_grey">#9B9B9B</color>
+    <color name="cal_color_white">#FFFFFF</color>
+    <color name="cal_color_red">#FFE54E36</color>
+    <color name="cal_color_green">#FF16A085</color>
+    <color name="cal_color_point_blue">#FF1875D1</color>
+
+    <color name="trans_cal_color_red">#77E54E36</color>
+    <color name="trans_cal_color_point_blue">#771875D1</color>
+</resources>

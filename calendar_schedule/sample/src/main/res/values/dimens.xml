@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_3dp">3dp</dimen>
+    <dimen name="schedule_item_size">50dp</dimen>
+    <dimen name="schedule_radius_size">4dp</dimen>
+    <dimen name="space_10dp">10dp</dimen>
+    <dimen name="space_12dp">12dp</dimen>
+</resources>

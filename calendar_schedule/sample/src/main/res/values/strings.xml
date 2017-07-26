@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">日程表</string>
+    <string name="action_today">今天</string>
+    <string name="action_day_view">日视图</string>
+    <string name="action_three_day_view">3日视图</string>
+    <string name="action_week_view">周视图</string>
+    <string name="title_activity_basic">基本样例</string>
+    <string name="month_view">月视图</string>
+    <string name="calendar_view">日程列表</string>
+    <string name="title_activity_asynchronous">异步请求事件</string>
+    <string name="async_error">无法从网络下载日程</string>
+</resources>
