@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.smile.calendar.view.WeekViewWithSchedule
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <include layout="@layout/calendar_day_layout_with_schedule" />
+    <include layout="@layout/calendar_day_layout_with_schedule" />
+    <include layout="@layout/calendar_day_layout_with_schedule" />
+    <include layout="@layout/calendar_day_layout_with_schedule" />
+    <include layout="@layout/calendar_day_layout_with_schedule" />
+    <include layout="@layout/calendar_day_layout_with_schedule" />
+    <include layout="@layout/calendar_day_layout_with_schedule" />
+
+</com.smile.calendar.view.WeekViewWithSchedule>

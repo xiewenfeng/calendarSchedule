@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.smile.calendar.manager.CalendarManager;
+import com.smile.calendar.module.EventModel;
 import com.smile.calendar.view.CollapseCalendarView;
 import com.smilexie.weekview.sample.apiclient.Event;
 import com.smilexie.weekview.sample.apiclient.MyJsonService;
@@ -90,9 +91,9 @@ public class MonthScheduleActivity extends AppCompatActivity implements Callback
     @Override
     public void success(List<Event> events, Response response) {
         if (events != null) {
-            List<com.smile.calendar.module.Event> eventList = new ArrayList<>();
+            List<EventModel> eventList = new ArrayList<>();
             for (Event event : events) {
-                eventList.add((new com.smile.calendar.module.Event(event.getName(), event.getDayOfMonth(), event.getStartTime(), event.getEndTime(), event.getColor())));
+                eventList.add(new EventModel(event.getName(), event.getStartTime(), event.getEndTime(), "", selectedDate.getYear(), selectedDate.getMonthOfYear(), event.getDayOfMonth(), String.valueOf(System.currentTimeMillis())));
             }
             calendarView.setEvent(eventList);
         }

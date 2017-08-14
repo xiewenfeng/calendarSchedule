@@ -9,11 +9,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.smile.calendar.manager.CalendarManager;
+import com.smile.calendar.view.CollapseCalendarView;
 import com.smilexie.weekview.sample.adapter.ScheduleAdapter;
 import com.smilexie.weekview.sample.apiclient.Event;
 import com.smilexie.weekview.sample.apiclient.MyJsonService;
-import com.smile.calendar.manager.CalendarManager;
-import com.smile.calendar.view.CollapseCalendarView;
 
 import org.joda.time.LocalDate;
 
@@ -60,6 +60,7 @@ public class CalendarScheduleActivity extends AppCompatActivity implements Callb
         }
         loadData();
     }
+
 
     private void loadData() {
         RestAdapter retrofit = new RestAdapter.Builder()
@@ -135,4 +136,6 @@ public class CalendarScheduleActivity extends AppCompatActivity implements Callb
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public static String json = "[{\"name\":\"Event 1\",\"dayOfMonth\":3,\"startTime\":\"01:00\",\"endTime\":\"02:00\",\"color\":\"#F57F68\"},{\"name\":\"Event 2\",\"dayOfMonth\":3,\"startTime\":\"04:00\",\"endTime\":\"05:00\",\"color\":\"#87D288\"},{\"name\":\"Event 3\",\"dayOfMonth\":3,\"startTime\":\"10:00\",\"endTime\":\"11:00\",\"color\":\"#F8B552\"},{\"name\":\"Event 4\",\"dayOfMonth\":3,\"startTime\":\"15:00\",\"endTime\":\"16:00\",\"color\":\"#59DBE0\"},{\"name\":\"Event 5\",\"dayOfMonth\":4,\"startTime\":\"04:00\",\"endTime\":\"05:00\",\"color\":\"#F57F68\"},{\"name\":\"Event 6\",\"dayOfMonth\":4,\"startTime\":\"07:00\",\"endTime\":\"08:00\",\"color\":\"#87D288\"},{\"name\":\"Event 7\",\"dayOfMonth\":4,\"startTime\":\"14:00\",\"endTime\":\"15:00\",\"color\":\"#F8B552\"},{\"name\":\"Event 8\",\"dayOfMonth\":5,\"startTime\":\"06:00\",\"endTime\":\"07:00\",\"color\":\"#59DBE0\"},{\"name\":\"Event 9\",\"dayOfMonth\":5,\"startTime\":\"11:00\",\"endTime\":\"12:00\",\"color\":\"#F57F68\"},{\"name\":\"Event 10\",\"dayOfMonth\":5,\"startTime\":\"16:00\",\"endTime\":\"17:00\",\"color\":\"#87D288\"},{\"name\":\"Event 11\",\"dayOfMonth\":4,\"startTime\":\"07:00\",\"endTime\":\"09:00\",\"color\":\"#F8B552\"},{\"name\":\"Event 12\",\"dayOfMonth\":4,\"startTime\":\"04:00\",\"endTime\":\"05:00\",\"color\":\"#59DBE0\"},{\"name\":\"Event 13\",\"dayOfMonth\":3,\"startTime\":\"01:00\",\"endTime\":\"02:00\",\"color\":\"#F57F68\"},{\"name\":\"Event 14\",\"dayOfMonth\":3,\"startTime\":\"10:00\",\"endTime\":\"11:00\",\"color\":\"#87D288\"},{\"name\":\"Event 15\",\"dayOfMonth\":4,\"startTime\":\"14:00\",\"endTime\":\"15:00\",\"color\":\"#F8B552\"},{\"name\":\"Event 16\",\"dayOfMonth\":3,\"startTime\":\"20:00\",\"endTime\":\"21:00\",\"color\":\"#59DBE0\"},{\"name\":\"Event 17\",\"dayOfMonth\":4,\"startTime\":\"19:00\",\"endTime\":\"20:00\",\"color\":\"#F57F68\"},{\"name\":\"Event 18\",\"dayOfMonth\":5,\"startTime\":\"22:00\",\"endTime\":\"23:00\",\"color\":\"#87D288\"},{\"name\":\"Event 19\",\"dayOfMonth\":5,\"startTime\":\"11:00\",\"endTime\":\"12:00\",\"color\":\"#F8B552\"},{\"name\":\"Event 20\",\"dayOfMonth\":6,\"startTime\":\"06:00\",\"endTime\":\"07:00\",\"color\":\"#59DBE0\"},{\"name\":\"Event 21\",\"dayOfMonth\":6,\"startTime\":\"09:00\",\"endTime\":\"10:00\",\"color\":\"#F57F68\"},{\"name\":\"Event 22\",\"dayOfMonth\":6,\"startTime\":\"12:00\",\"endTime\":\"13:00\",\"color\":\"#87D288\"},{\"name\":\"Event 23\",\"dayOfMonth\":6,\"startTime\":\"16:00\",\"endTime\":\"17:00\",\"color\":\"#F8B552\"},{\"name\":\"Event 24\",\"dayOfMonth\":7,\"startTime\":\"07:00\",\"endTime\":\"08:00\",\"color\":\"#59DBE0\"},{\"name\":\"Event 25\",\"dayOfMonth\":7,\"startTime\":\"14:00\",\"endTime\":\"16:00\",\"color\":\"#F57F68\"},{\"name\":\"Event 26\",\"dayOfMonth\":7,\"startTime\":\"21:00\",\"endTime\":\"22:00\",\"color\":\"#87D288\"},{\"name\":\"Event 27\",\"dayOfMonth\":8,\"startTime\":\"06:00\",\"endTime\":\"07:00\",\"color\":\"#F8B552\"},{\"name\":\"Event 28\",\"dayOfMonth\":8,\"startTime\":\"12:00\",\"endTime\":\"13:00\",\"color\":\"#59DBE0\"},{\"name\":\"Event 29\",\"dayOfMonth\":8,\"startTime\":\"16:00\",\"endTime\":\"17:00\",\"color\":\"#F57F68\"},{\"name\":\"Event 30\",\"dayOfMonth\":6,\"startTime\":\"06:00\",\"endTime\":\"08:00\",\"color\":\"#87D288\"},{\"name\":\"Event 31\",\"dayOfMonth\":6,\"startTime\":\"12:00\",\"endTime\":\"13:00\",\"color\":\"#F8B552\"},{\"name\":\"Event 32\",\"dayOfMonth\":6,\"startTime\":\"17:00\",\"endTime\":\"18:00\",\"color\":\"#59DBE0\"},{\"name\":\"Event 33\",\"dayOfMonth\":7,\"startTime\":\"21:00\",\"endTime\":\"22:00\",\"color\":\"#F57F68\"},{\"name\":\"Event 34\",\"dayOfMonth\":7,\"startTime\":\"09:00\",\"endTime\":\"10:00\",\"color\":\"#87D288\"},{\"name\":\"Event 35\",\"dayOfMonth\":6,\"startTime\":\"01:00\",\"endTime\":\"03:00\",\"color\":\"#F8B552\"}]";
 }

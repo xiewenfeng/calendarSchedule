@@ -3,8 +3,11 @@
     package="com.smilexie.weekview.sample" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -27,6 +30,10 @@
         </activity>
         <activity android:name=".MonthScheduleActivity"/>
         <activity android:name=".CalendarScheduleActivity"/>
+        <activity android:name=".systemcalendar.SyncSystemEventActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".systemcalendar.SyncSystemCalendarEvent"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
     </application>
 
 </manifest>

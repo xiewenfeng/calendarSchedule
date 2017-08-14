@@ -1,23 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="#fff"
     android:orientation="vertical"
-    android:background="#fff">
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/buttonBasic"
+        style="@style/Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_activity_basic"
-        style="@style/Button"/>
+        android:text="@string/title_activity_basic" />
 
     <Button
         android:id="@+id/buttonAsynchronous"
+        style="@style/Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_activity_asynchronous"
-        style="@style/Button"/>
+        android:text="@string/title_activity_asynchronous" />
+
+    <Button
+        android:id="@+id/buttonAddSchedule"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_schedule" />
+
+    <Button
+        android:id="@+id/buttonSyncSystemSchedule"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sync_system_schedule" />
+
+    <Button
+        android:id="@+id/buttonSyncSystemEvent"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sync_system_event" />
 
 </LinearLayout>

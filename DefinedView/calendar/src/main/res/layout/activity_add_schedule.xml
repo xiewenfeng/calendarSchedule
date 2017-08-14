@@ -1,0 +1,107 @@
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <View
+            style="@style/divide_line"
+            android:layout_marginTop="@dimen/space_10dp" />
+
+        <EditText
+            android:id="@+id/title_et"
+            style="@style/edit_text"
+            android:hint="@string/title" />
+
+        <View
+            style="@style/divide_line"
+            android:layout_marginLeft="@dimen/margin_8dp" />
+
+        <EditText
+            android:id="@+id/position_et"
+            style="@style/edit_text"
+            android:hint="@string/position" />
+
+        <View style="@style/divide_line" />
+
+        <RelativeLayout
+            style="@style/layout_mw"
+            android:layout_marginTop="@dimen/margin_8dp">
+
+            <TextView
+                style="@style/main_content_text_style"
+                android:layout_margin="@dimen/margin_8dp"
+                android:text="@string/all_day" />
+
+            <Switch
+                style="@style/layout_ww"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/margin_8dp" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/divide_line"
+            android:layout_marginLeft="@dimen/margin_8dp" />
+
+        <RelativeLayout android:onClick="startTimeClick"
+            style="@style/layout_mw"
+            android:layout_marginTop="@dimen/margin_8dp">
+
+            <TextView
+                android:id="@+id/start_time_tv"
+                style="@style/main_content_text_style"
+                android:layout_margin="@dimen/margin_8dp"
+                android:text="@string/start_time" />
+
+            <TextView
+                android:id="@+id/start_time"
+                style="@style/edit_text"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/start_time_iv"
+                android:layout_toRightOf="@+id/start_time_tv" />
+
+            <ImageView
+                android:id="@+id/start_time_iv"
+                style="@style/layout_ww"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/margin_8dp"
+                android:src="@android:drawable/ic_menu_my_calendar" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/divide_line"
+            android:layout_marginLeft="@dimen/margin_8dp" />
+
+        <RelativeLayout android:onClick="endTimeClick"
+            style="@style/layout_mw"
+            android:layout_marginTop="@dimen/margin_8dp">
+
+            <TextView
+                android:id="@+id/end_time_tv"
+                style="@style/main_content_text_style"
+                android:layout_margin="@dimen/margin_8dp"
+                android:text="@string/end_time" />
+
+            <TextView
+                android:id="@+id/end_time"
+                style="@style/edit_text"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/end_time_iv"
+                android:layout_toRightOf="@+id/end_time_tv" />
+
+            <ImageView
+                android:id="@+id/end_time_iv"
+                style="@style/layout_ww"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/margin_8dp"
+                android:src="@android:drawable/ic_menu_my_calendar"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

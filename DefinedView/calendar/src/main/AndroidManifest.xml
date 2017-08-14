@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smile.calendar">
+
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".ui.AddDeleteActivity"/>
+        <activity android:name=".ui.CalendarScheduleActivity"/>
+        <activity android:name=".ui.SyncSystemCalendarEvent"/>
+        <activity android:name=".ui.SyncSystemEventActivity"/>
+
+    </application>
+
+</manifest>

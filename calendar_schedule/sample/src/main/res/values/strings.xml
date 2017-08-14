@@ -10,4 +10,7 @@
     <string name="calendar_view">日程列表</string>
     <string name="title_activity_asynchronous">异步请求事件</string>
     <string name="async_error">无法从网络下载日程</string>
+    <string name="add_schedule">添加日程</string>
+    <string name="sync_system_schedule">读取手机系统日程，插入系统日程</string>
+    <string name="sync_system_event">同步手机系统事件</string>
 </resources>
